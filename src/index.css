@@ -54,7 +54,7 @@ h1 { max-width: 700px; margin-bottom: 8px; color: #ffffff; font-family: 'Space G
 .contact-list { display: grid; gap: 11px; color: #b8ccc4; font-size: 11px; }
 .contact-list a, .contact-list span { display: flex; align-items: center; gap: 9px; transition: color .2s ease; }
 .contact-list a:hover { color: #c8f5e0; }
-.contact-list svg { color: #7bcfa8; }
+.contact-list svg { color: #0a0a0a; }
 .portrait-shell { min-width: 0; border: 1px solid #c9d3ce; background: #fff; color: #000; box-shadow: 14px 14px 0 #1e3028; transform: rotate(1deg); transition: transform .3s ease, box-shadow .3s ease; }
 .portrait-shell:hover { transform: rotate(0deg) translateY(-4px); box-shadow: 18px 18px 0 #1e3028; }
 .portrait-label { display: flex; justify-content: space-between; padding: 9px 12px; border-bottom: 1px solid #c9d3ce; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }

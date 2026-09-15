@@ -91,7 +91,7 @@ const asciiPortrait = String.raw`...............................................
 @@@@@@@@@@@@@@@@@@@@@@@@@@@%:......:.:::::::.......................=%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@#:.....:::::::::::::...................:*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`;
 
-const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=shashidharan2005@gmail.com&su=Connecting%20via%20your%20portfolio&body=Hi%20Shashidharan%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%20with%20you.%20I%27m%20reaching%20out%20regarding%3A%0A%0A%5Bplease%20add%20your%20message%20here%5D%0A%0ALooking%20forward%20to%20hearing%20from%20you.%0A%0ABest%20regards%2C%0A%5Byour%20name%5D';
+const gmailUrl = 'https://mail.google.com/mail/u/0/?fs=1&to=shashidharan2005@gmail.com&su=Hire+-+Shashidharan+V&body=Hi+Shashidharan,%0A%0AI+came+across+your+portfolio+and+would+like+to+hire+you+for:%0A%0A%5Bplease+add+your+message+here%5D%0A%0ALooking+forward+to+hearing+from+you.%0A%0ABest+regards,%0A%5Byour+name%5D&tf=cm';
 
 type SectionKey = 'about' | 'introduction' | 'experience' | 'projects' | 'skills' | 'education' | 'certifications' | 'publication';
 
@@ -141,7 +141,7 @@ function App() {
               <a href="mailto:shashidharan2005@gmail.com"><Mail size={15} /> shashidharan2005@gmail.com</a>
               <a href="tel:+919686287046"><Command size={15} /> +91 9686287046</a>
               <span><MapPin size={15} /> {settings.location}</span>
-              <a className="contact-cta" href={gmailUrl} target="_blank" rel="noopener noreferrer"><Send size={15} /> let's connect</a>
+              <a className="contact-cta" href={gmailUrl} target="_blank" rel="noopener noreferrer"><Send size={15} /> Hire Me !</a>
             </div>
           </div>
           <div className="portrait-shell">
