@@ -190,6 +190,10 @@ INSERT INTO public.introduction_content (section_key, heading, body, sort_order)
   'I''m currently looking for opportunities where I can work on real problems, learn from experienced people, take ownership, and create measurable value through data.',
   'If there''s a problem worth understanding, I''m interested in finding what the data has to say.'
 ], 4)
+('tech_recruiting', 'I’m also a Tech Recruiter', ARRAY[
+  'Alongside my interest in data analytics, I’m also a tech recruiter, helping connect technical talent with relevant opportunities.',
+  'I enjoy understanding technical roles, recognizing relevant skills, and bringing the right people and teams together.'
+], 5),
 ON CONFLICT (section_key) DO NOTHING;
 
 INSERT INTO public.experiences (role, company, location, start_date, end_date, bullets, sort_order) VALUES
@@ -230,4 +234,4 @@ CREATE POLICY "Owner can upload project-assets" ON storage.objects FOR INSERT TO
 DROP POLICY IF EXISTS "Owner can update project-assets" ON storage.objects;
 CREATE POLICY "Owner can update project-assets" ON storage.objects FOR UPDATE TO authenticated USING (bucket_id = 'project-assets' AND (auth.jwt() ->> 'email') = 'shashidharan2005@gmail.com') WITH CHECK (bucket_id = 'project-assets' AND (auth.jwt() ->> 'email') = 'shashidharan2005@gmail.com');
 DROP POLICY IF EXISTS "Owner can delete project-assets" ON storage.objects;
-CREATE POLICY "Owner can delete project-assets" ON storage.objects FOR DELETE TO authenticated USING (bucket_id = 'project-assets' AND (auth.jwt() ->> 'email') = 'shashidharan2005@gmail.com');
+CREATE POLICY "Owner can delete project-assets" ON storage.objects FOR DELETE TO authenticated USING (bucket_id = 'project-assets' AND (au
